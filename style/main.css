@@ -1,0 +1,89 @@
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.container {
+	width: 940px;
+	display: flex;
+}
+
+header {
+	background: url(../img/bg.jpg)  center no-repeat;
+	color: #fff;
+}
+
+.start {
+	flex-direction: column;
+}
+
+.menu {
+	display: flex;
+}
+
+nav {
+	height: 100px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+
+
+
+#development {
+	background: #fff;
+}
+
+
+
+
+
+#branding {
+	background: #fafafa;
+}
+
+
+
+
+#skills {
+	background: #fff;
+}
+
+
+
+
+
+#clients {
+	background: #fafafa;
+}
+
+
+
+
+
+#social {
+	background: #fff;
+}
+
+
+
+
+
+#team {
+	background: #111;
+}
+
+
+
+
+footer {
+	background: #7690c5;
+}
