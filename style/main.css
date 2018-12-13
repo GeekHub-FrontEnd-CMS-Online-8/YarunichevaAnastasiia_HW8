@@ -9,8 +9,10 @@
 }
 
 header {
-	background: url(../img/bg.jpg)  center no-repeat;
+	background: url(../img/bg.jpg) center no-repeat/ cover;
 	color: #fff;
+	padding-bottom: 125px;
+	padding-top: 45px;
 }
 
 .start {
@@ -19,10 +21,19 @@ header {
 
 .menu {
 	display: flex;
+	height: 100px;
+	width: 940px;
+	justify-content: space-between;
+}
+
+.menu img {
+	width: 145px;
+	height: 30px;
 }
 
 nav {
-	height: 100px;
+	width: 370px;
+	justify-content: space-between;
 }
 
 nav a {
@@ -35,55 +46,262 @@ nav ul {
 	list-style: none;
 }
 
+header h3 {
+	margin-top: 125px;
+	margin-bottom: 45px;
+	font-size: 32px;
+}
 
+h1 {
+	text-transform: uppercase;
+	font-size: 66px;
+}
+
+header button {
+	margin-top: 80px;
+	width: 240px;
+	height: 60px;
+	background: transparent;
+	color: #fff;
+	border: 2px #fff solid;
+	border-radius: 3px;
+	font-size: 23px;
+}
 
 
 #development {
 	background: #fff;
+	padding: 100px;
 }
 
+h2 {
+	color: #222;
+	font-size: 60px;
+	font-weight: normal;
+}
 
-
-
+span {
+	font-weight: bold;
+}
 
 #branding {
 	background: #fafafa;
+	padding: 100px;
 }
 
+.box {
+	width: 540px;
+}
 
+p {
+	color: #777;
+	font-size: 18px;
+}
 
+.brand {
+	display: flex;
+	flex-direction: row-reverse;
+}
 
 #skills {
 	background: #fff;
+	padding: 95px;
 }
 
+.pros {
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+}
 
+.pros img {
+	width: 70px;
+	height: 70px;
+}
 
-
+.text {
+	width: 305px;
+	margin: 10px;
+}
 
 #clients {
 	background: #fafafa;
+	padding: 100px;
 }
 
+.awesome-clients {
+	display: flex;
+	flex-direction: column;
+}
 
+.jamie {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 
+.bart {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
 
+.quote {
+	width: 530px;
+	height: 83px;
+	border: 1px #ededed solid;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 40px 60px;
+}
+
+.quote p {
+	font-size: 26px
+}
+
+.quote .signature {
+	font-size: 20px;
+	color: #7690c5;
+}
 
 #social {
 	background: #fff;
+	padding: 60px;
 }
-
-
 
 
 
 #team {
 	background: #111;
+	padding: 100px;
 }
 
+.amazing-team {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #fff;
+}
 
+.amazing-team h2 {
+	color: #fff;
+}
 
+.workers {
+	width: 940px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 70px;
+	justify-content: space-between;
+}
+
+.personal {
+	height: 345px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.personal a {
+	color: #fff;
+}
+
+.proin {
+	margin-top: 40px;
+}
 
 footer {
 	background: #7690c5;
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
+footer p {
+	color: #fff;
+}
+
+.contact {
+	flex-direction: column;
+}
+
+footer h2 {
+	color: #fff;
+}
+
+.block-1 {
+	display: flex;
+	align-items: baseline;
+	flex: 1;
+}
+
+.info {
+	width: 450px;
+}
+
+.info h2 {
+	margin-bottom: 15px;
+}
+
+.contact-information {
+	display: flex;
+}
+	
+.column {
+	display: flex;
+	flex-direction: column;
+	height: 180px;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-left: 0px;
+}
+
+.details {
+	width: 190px;
+	display: flex;
+	justify-content: space-between;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+input {
+	width: 455px;
+	height: 50px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	padding-left: 20px;
+}
+
+
+textarea {
+	width: 455px;
+	height: 212px;
+	margin-top: -5px;
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.placeholder {
+	font-size: 18px;
+	color: #bbb;
+}
+
+hr {
+	width: 950px;
+	height: 1px;
+	border: none;
+	background: #87a0d2;
+	margin-bottom: 30px;
+}
+
+.end {
+	text-align: center;
+	font-size: 16px;
 }
