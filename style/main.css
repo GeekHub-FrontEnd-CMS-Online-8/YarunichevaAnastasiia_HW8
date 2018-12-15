@@ -8,8 +8,15 @@
 	display: flex;
 }
 
+@media (max-width: 1024px) {
+	.container {
+		width: 100%;
+	}
+}
+
 header {
-	background: url(../img/bg.jpg) center no-repeat/ cover;
+	background: url(../img/bg.jpg) center no-repeat;
+	background-size: cover;
 	color: #fff;
 	padding-bottom: 125px;
 	padding-top: 45px;
@@ -24,6 +31,13 @@ header {
 	height: 100px;
 	width: 940px;
 	justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+	.menu {
+		width: 100%;
+		flex-direction: column;
+	}
 }
 
 .menu img {
@@ -52,9 +66,33 @@ header h3 {
 	font-size: 32px;
 }
 
+@media (max-width: 1024px) {
+	header h3 {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 768px) {
+	header h3 {
+		font-size: 25px;
+	}
+}
+
 h1 {
 	text-transform: uppercase;
 	font-size: 66px;
+}
+
+@media (max-width: 1024px) {
+	h1 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 35px;
+	}
 }
 
 header button {
@@ -80,8 +118,31 @@ h2 {
 	font-weight: normal;
 }
 
+@media (max-width: 1024px) {
+	h2 {
+		font-size: 50px;
+	}
+}
+
 span {
 	font-weight: bold;
+}
+
+.box {
+	width: 540px;
+}
+
+@media (max-width: 1024px) {
+	.box {
+		width: 700px;
+		text-align: center; 
+	}
+}
+
+@media (max-width: 1024px) {
+	.shape {
+		display: none;
+	}
 }
 
 #branding {
@@ -89,13 +150,15 @@ span {
 	padding: 100px;
 }
 
-.box {
-	width: 540px;
-}
-
 p {
 	color: #777;
 	font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+	p {
+		font-size: 15px;
+	}
 }
 
 .brand {
@@ -103,15 +166,33 @@ p {
 	flex-direction: row-reverse;
 }
 
+@media (max-width: 1024px) {
+	.brand {
+		flex-direction: row;
+	}
+}
+
 #skills {
 	background: #fff;
 	padding: 95px;
+}
+
+@media (max-width: 1024px) {
+	.two-columns {
+		flex-direction: column;
+	}
 }
 
 .pros {
 	width: 400px;
 	display: flex;
 	justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+	.pros {
+		width: 100%;
+	}
 }
 
 .pros img {
@@ -124,6 +205,12 @@ p {
 	margin: 10px;
 }
 
+@media (max-width: 1024px) {
+	.text {
+		width: 100%;
+	}
+}
+
 #clients {
 	background: #fafafa;
 	padding: 100px;
@@ -134,16 +221,41 @@ p {
 	flex-direction: column;
 }
 
+@media (max-width: 1024px) {
+	.awesome-clients h2, .awesome-clients p {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.teammate {
+		width: 150px;
+	}
+}
+
 .jamie {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
+@media (max-width: 768px) {
+	.jamie {
+		flex-direction: column;
+	}
+}
+
 .bart {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.bart {
+		flex-direction: column;
+	}
 }
 
 .quote {
@@ -157,8 +269,28 @@ p {
 	padding: 40px 60px;
 }
 
+@media (max-width: 1024px) {
+	.quote {
+		width: 70%;
+		height: 60px;
+	}
+}
+
+@media (max-width: 768px) {
+	.quote {
+		width: 100%;
+		height: 100%;
+	}
+}
+
 .quote p {
 	font-size: 26px
+}
+
+@media (max-width: 1024px)  {
+	.quote p {
+		font-size: 15px;
+	}
 }
 
 .quote .signature {
@@ -166,12 +298,28 @@ p {
 	color: #7690c5;
 }
 
+@media (max-width: 1024px) {
+	.quote .signature {
+		font-size: 15px;
+	}
+}
+
 #social {
 	background: #fff;
 	padding: 60px;
 }
 
+@media (max-width: 768px) {
+	#social .container {
+		flex-wrap: wrap;
+	}
+}
 
+@media (max-width: 768px) {
+	#social .container img {
+		margin-top: 15px;
+	}
+}
 
 #team {
 	background: #111;
@@ -190,11 +338,18 @@ p {
 }
 
 .workers {
-	width: 940px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	margin-top: 70px;
 	justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+	.workers {
+		flex-direction: column;
+		width: 100%;
+	}
 }
 
 .personal {
@@ -202,6 +357,44 @@ p {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+	.personal {
+		height: 260px;
+		margin-bottom: 20px;
+	}
+}
+
+
+h5 {
+	font-size: 18px;
+}
+
+.fa-twitter:hover {
+	color: #40a5e2;
+}
+
+.fa-facebook-f:hover {
+	color: #0b5191;
+}
+
+.fa-pinterest-p:hover {
+	color: #da1520;
+}
+
+.fa-google-plus-g:hover {
+	color: #de5549;
+}
+
+@media (max-width: 1024px) {
+	.portret {
+		width: 150px;
+	}
+}
+
+.personal p {
+	font-size: 16px;
 }
 
 .personal a {
@@ -237,12 +430,24 @@ footer h2 {
 	flex: 1;
 }
 
+@media (max-width: 1024px) {
+	.block-1 {
+		flex-direction: column;
+	}
+}
+
 .info {
 	width: 450px;
 }
 
 .info h2 {
 	margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+	.info h2 {
+	text-align: center;
+}
 }
 
 .contact-information {
@@ -256,6 +461,14 @@ footer h2 {
 	justify-content: space-between;
 	margin-top: 50px;
 	margin-left: 0px;
+}
+
+@media (max-width: 1024px) {
+	.column {
+		height: 100px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
 }
 
 .details {
@@ -294,11 +507,18 @@ textarea {
 }
 
 hr {
-	width: 950px;
+	width: 940px;
 	height: 1px;
 	border: none;
 	background: #87a0d2;
 	margin-bottom: 30px;
+	margin-left: 0px;
+}
+
+@media (max-width: 1024px) {
+	hr {
+		width: 100%;
+	}
 }
 
 .end {
